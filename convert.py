@@ -92,15 +92,15 @@ if __name__ == "__main__":
                             edge_out.write(json.dumps({
                                 "_id" : str(eid),
                                 "_label" : label,
-                                "_to" : str(dest),
-                                "_from" : str(vid)
+                                "_from" : str(dest),
+                                "_to" : str(vid)
                             } | eprops) + "\n")
                         else:
                             edge_out.write(json.dumps({
                                 "gid" : str(eid),
                                 "label" : label,
-                                "to" : str(dest),
-                                "from" : str(vid),
+                                "from" : str(dest),
+                                "to" : str(vid),
                                 "data" : eprops}) + "\n")
 
     vertex_out.close()
