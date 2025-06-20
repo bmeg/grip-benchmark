@@ -158,9 +158,41 @@ Total Benchmark Time:  877.90
 ## Postgres
 
 ```
-postgres:10.4
+postgres:10.4 1 core ~2GB RAM
 
-Still hasn't gotten past 2025-06-19 16:06:35.584024 statement I wasn't sure if it was even running or not.
-Docker container appears to be running @ 30% cpu and 200 MB RAM.
-Probably as slow at writing data as mongo is at reading data. still waiting to load first set of data.
+(venv) peterkor@RNB11238 calypr % python test.py
+Benchmark Start  2025-06-20 08:15:09.377177
+Loaded: META/DocumentReference.ndjson in 237.99 seconds
+Loaded: META/Specimen.ndjson in 16.89 seconds
+Loaded: META/Medication.ndjson in 0.34 seconds
+Loaded: META/Observation.ndjson in 304.22 seconds
+Loaded: META/ResearchStudy.ndjson in 0.69 seconds
+Loaded: META/SubstanceDefinition.ndjson in 0.29 seconds
+Loaded: META/Condition.ndjson in 4.11 seconds
+Loaded: META/ResearchSubject.ndjson in 4.67 seconds
+Loaded: META/Group.ndjson in 89.55 seconds
+Loaded: META/MedicationAdministration.ndjson in 1.63 seconds
+Loaded: META/Patient.ndjson in 1.50 seconds
+Loaded: META/Substance.ndjson in 0.29 seconds
+Loaded Test data in 662.17 seconds
+
+query 0: #################################################################################
+Successfully queried 427193 rows in 0.37 seconds
+query 1: #################################################################################
+Successfully queried 214841 rows in 37.77 seconds
+query 2: #################################################################################
+Successfully queried 85433 rows in 20.96 seconds
+query 3: #################################################################################
+Successfully queried 80 rows in 18.64 seconds
+query 4: #################################################################################
+Successfully queried 10000 rows in 5.23 seconds
+query 5: #################################################################################
+Successfully queried 12157 rows in 82.14 seconds
+query 6: #################################################################################
+Successfully queried 6789 rows in 34.33 seconds
+query 7: #################################################################################
+Successfully queried 10000 rows in 3.57 seconds
+query 8: #################################################################################
+Successfully queried 0 rows in 17.70 seconds
+Total Benchmark Time:  882.89
 ```
