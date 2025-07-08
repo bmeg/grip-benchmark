@@ -37,6 +37,45 @@ Successfully queried 0 rows in 29.58 seconds
 Total Benchmark Time:  484.36
 ```
 
+## Grids -- Latest
+
+```
+Benchmark Start  2025-07-06 13:44:30.287741
+Loaded: META/DocumentReference.ndjson in 24.18 seconds
+Loaded: META/Specimen.ndjson in 2.97 seconds
+Loaded: META/Medication.ndjson in 0.28 seconds
+Loaded: META/Observation.ndjson in 122.66 seconds
+Loaded: META/ResearchStudy.ndjson in 0.75 seconds
+Loaded: META/SubstanceDefinition.ndjson in 0.26 seconds
+Loaded: META/Condition.ndjson in 8.66 seconds
+Loaded: META/ResearchSubject.ndjson in 6.04 seconds
+Loaded: META/Group.ndjson in 12.35 seconds
+Loaded: META/MedicationAdministration.ndjson in 6.61 seconds
+Loaded: META/Patient.ndjson in 1.09 seconds
+Loaded: META/Substance.ndjson in 0.31 seconds
+Loaded Test data in 186.15 seconds
+```
+
+query 0: #################################################################################
+Successfully queried 427193 rows in 1.46 seconds
+query 1: #################################################################################
+Successfully queried 214841 rows in 37.06 seconds
+query 2: #################################################################################
+Successfully queried 85433 rows in 43.47 seconds
+query 3: #################################################################################
+Successfully queried 80 rows in 27.68 seconds
+query 4: #################################################################################
+Successfully queried 10000 rows in 30.28 seconds
+query 5: #################################################################################
+Successfully queried 12157 rows in 33.79 seconds
+query 6: #################################################################################
+Successfully queried 6789 rows in 47.49 seconds
+query 7: #################################################################################
+Successfully queried 10000 rows in 183.67 seconds
+query 8: #################################################################################
+Successfully queried 0 rows in 31.17 seconds
+Total Benchmark Time: 622.22 seconds
+
 ## Badger
 
 ```
@@ -196,3 +235,8 @@ query 8: #######################################################################
 Successfully queried 0 rows in 17.70 seconds
 Total Benchmark Time:  882.89
 ```
+
+## Sqlite
+
+Gave it 20 minutes to get through the first write command, "Loaded: META/DocumentReference.ndjson in 237.99 seconds"
+but it didn't finish in 20 minutes so I suspended the test
