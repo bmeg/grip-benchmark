@@ -37,7 +37,7 @@ Successfully queried 0 rows in 29.58 seconds
 Total Benchmark Time:  484.36
 ```
 
-## Grids -- Latest
+## Grids -- using BSON marshaller + reflect dynamic type checker
 
 ```
 Benchmark Start  2025-07-06 13:44:30.287741
@@ -75,6 +75,43 @@ Successfully queried 10000 rows in 183.67 seconds
 query 8: #################################################################################
 Successfully queried 0 rows in 31.17 seconds
 Total Benchmark Time: 622.22 seconds
+
+## Grids Latest using Sonic marshaller
+
+Benchmark Start 2025-07-09 11:39:49.003608
+Loaded: META/DocumentReference.ndjson in 20.43 seconds
+Loaded: META/Specimen.ndjson in 2.46 seconds
+Loaded: META/Medication.ndjson in 0.25 seconds
+Loaded: META/Observation.ndjson in 108.04 seconds
+Loaded: META/ResearchStudy.ndjson in 0.49 seconds
+Loaded: META/SubstanceDefinition.ndjson in 0.25 seconds
+Loaded: META/Condition.ndjson in 4.54 seconds
+Loaded: META/ResearchSubject.ndjson in 4.37 seconds
+Loaded: META/Group.ndjson in 7.11 seconds
+Loaded: META/MedicationAdministration.ndjson in 4.67 seconds
+Loaded: META/Patient.ndjson in 0.83 seconds
+Loaded: META/Substance.ndjson in 0.28 seconds
+Loaded Test data in 153.72 seconds
+
+query 0: #################################################################################
+Successfully queried 427193 rows in 0.26 seconds
+query 1: #################################################################################
+Successfully queried 214841 rows in 35.92 seconds
+query 2: #################################################################################
+Successfully queried 85433 rows in 13.98 seconds
+query 3: #################################################################################
+Successfully queried 80 rows in 5.89 seconds
+query 4: #################################################################################
+Successfully queried 10000 rows in 8.73 seconds
+query 5: #################################################################################
+Successfully queried 2157 rows in 8.58 seconds
+query 6: #################################################################################
+Successfully queried 6789 rows in 32.36 seconds
+query 7: #################################################################################
+Successfully queried 10000 rows in 183.81 seconds
+query 8: #################################################################################
+Successfully queried 0 rows in 8.50 seconds
+Total Benchmark Time: 451.74
 
 ## Badger
 
